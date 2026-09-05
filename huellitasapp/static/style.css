@@ -1,0 +1,865 @@
+:root {
+    --terracota: #C67E5A;
+    --terracota-oscuro: #A96345;
+    --beige: #F5F0E6;
+    --marron: #382B1D;
+    --crema: #FFFCE7;
+    --blanco: #FFFEFA;
+    --borde: #E2D8C7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--beige);
+    color: var(--marron);
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar-huellitas {
+    background-color: var(--blanco);
+    border-bottom: 1px solid var(--borde);
+    padding: 15px 0;
+}
+
+.logo-huellitas {
+    width: 45px;
+    height: 45px;
+    background-color: var(--marron);
+    color: var(--crema);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.nombre-huellitas {
+    color: var(--marron);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar-huellitas .nav-link {
+    color: var(--marron);
+    font-weight: 600;
+    margin-left: 15px;
+    transition: color 0.2s ease;
+}
+
+.navbar-huellitas .nav-link:hover {
+    color: var(--terracota);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--marron);
+    padding: 7px 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(198, 126, 90, 0.15);
+}
+
+/* Icono del menú */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23382B1D' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =========================
+   INICIO - HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background-color: var(--beige);
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-label {
+    color: var(--terracota);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: var(--marron);
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.02;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--terracota);
+}
+
+.hero p {
+    color: var(--marron);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.btn-huellitas {
+    background-color: var(--terracota);
+    border: 2px solid var(--terracota);
+    color: var(--crema);
+    border-radius: 8px;
+    padding: 13px 27px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-huellitas:hover {
+    background-color: var(--terracota-oscuro);
+    border-color: var(--terracota-oscuro);
+    color: var(--crema);
+    transform: translateY(-2px);
+}
+
+.btn-huellitas-outline {
+    background-color: transparent;
+    color: var(--terracota);
+    border: 2px solid var(--terracota);
+    border-radius: 8px;
+    padding: 13px 27px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-huellitas-outline:hover {
+    background-color: var(--terracota);
+    color: var(--crema);
+    transform: translateY(-2px);
+}
+
+.hero-decoration {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-circle {
+    width: 330px;
+    height: 330px;
+    background-color: var(--crema);
+    border: 2px solid var(--borde);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-paw {
+    width: 190px;
+    height: 190px;
+    background-color: var(--marron);
+    color: var(--terracota);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+}
+
+.hero-small-circle {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--terracota);
+    color: var(--crema);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.circle-one {
+    top: 15px;
+    right: 30px;
+}
+
+.circle-two {
+    bottom: 20px;
+    left: 20px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.section {
+    padding: 100px 20px;
+}
+
+.section-light {
+    background-color: var(--blanco);
+}
+
+.section-beige {
+    background-color: var(--beige);
+}
+
+.section-title {
+    color: var(--marron);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.section-subtitle {
+    color: var(--marron);
+    opacity: 0.85;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* =========================
+   TARJETAS DE INFORMACIÓN
+========================= */
+
+.info-card {
+    background-color: var(--crema);
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+    padding: 38px 30px;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(56, 43, 29, 0.08);
+}
+
+.info-icon {
+    width: 62px;
+    height: 62px;
+    background-color: var(--marron);
+    color: var(--terracota);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+}
+
+.info-card h3 {
+    color: var(--terracota);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: var(--marron);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =========================
+   PASOS
+========================= */
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--borde);
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    min-width: 65px;
+    height: 65px;
+    background-color: var(--terracota);
+    color: var(--crema);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.step h3 {
+    color: var(--marron);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: var(--marron);
+    opacity: 0.85;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =========================
+   ADOPCIÓN RESPONSABLE
+========================= */
+
+.responsabilidad-card {
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+    padding: 28px;
+    height: 100%;
+}
+
+.responsabilidad-card h4 {
+    color: var(--terracota);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.responsabilidad-card p {
+    color: var(--marron);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background-color: var(--marron);
+    color: var(--crema);
+    padding: 100px 20px;
+}
+
+.cta h2 {
+    color: var(--crema);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: var(--crema);
+    opacity: 0.9;
+    max-width: 760px;
+    line-height: 1.8;
+    margin: 0 auto 30px;
+}
+
+/* =========================
+   BOTÓN DE AYUDA
+========================= */
+
+.help-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--marron);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 18px rgba(56, 43, 29, 0.2);
+    z-index: 1000;
+    transition: all 0.2s ease;
+}
+
+.help-button:hover {
+    background-color: var(--terracota);
+    transform: translateY(-3px);
+}
+
+/* =========================
+   RAZAS
+========================= */
+
+.encabezado-razas {
+    padding: 60px 20px 35px;
+    text-align: center;
+}
+
+.encabezado-razas h1 {
+    color: var(--marron);
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.65rem);
+    margin-bottom: 15px;
+}
+
+.encabezado-razas p {
+    max-width: 700px;
+    margin: auto;
+    color: #66584b;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.buscador-contenedor {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+#buscadorRazas {
+    width: 100%;
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    padding: 15px 20px;
+    background-color: var(--blanco);
+    color: var(--marron);
+    box-shadow: 0 4px 15px rgba(56, 43, 29, 0.06);
+}
+
+#buscadorRazas:focus {
+    border-color: var(--terracota);
+    box-shadow: 0 0 0 3px rgba(198, 126, 90, 0.15);
+}
+
+#contenedorRazas {
+    padding-bottom: 60px;
+}
+
+#contenedorRazas .card {
+    height: 100%;
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: var(--blanco);
+    box-shadow: 0 6px 20px rgba(56, 43, 29, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contenedorRazas .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(56, 43, 29, 0.13);
+}
+
+#contenedorRazas .card-img-top {
+    width: 100%;
+    height: 220px !important;
+    object-fit: cover;
+}
+
+#contenedorRazas .card-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedorRazas .card-title {
+    color: var(--marron);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#contenedorRazas .card-text {
+    color: #6d6258;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+#contenedorRazas .btn-huellitas {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =========================
+   MODALES
+========================= */
+
+.modal-content {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: var(--blanco);
+}
+
+.modal-header {
+    background-color: var(--marron);
+    color: white;
+    border: none;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    color: var(--marron);
+    padding: 25px;
+}
+
+#imagenRazaModal {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.dato-raza {
+    background-color: var(--crema);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    height: calc(100% - 10px);
+}
+
+.dato-raza strong {
+    color: var(--terracota-oscuro);
+}
+
+.modal-body label {
+    color: var(--marron);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    padding: 11px 13px;
+}
+
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+    border-color: var(--terracota);
+    box-shadow: 0 0 0 3px rgba(198, 126, 90, 0.12);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--borde);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--marron);
+    color: var(--crema);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .container {
+        max-width: 95%;
+    }
+
+    .hero {
+        padding: 70px 25px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.8rem, 7vw, 4.5rem);
+    }
+
+    .hero-decoration {
+        margin-top: 40px;
+    }
+
+    .section {
+        padding: 80px 25px;
+    }
+
+    #contenedorRazas > .col-md-4 {
+        width: 50%;
+    }
+
+    #contenedorRazas .card-img-top {
+        height: 200px !important;
+    }
+
+    .modal-dialog {
+        margin: 20px auto;
+    }
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 575px) {
+
+    .navbar-huellitas {
+        padding: 10px 0;
+    }
+
+    .nombre-huellitas {
+        font-size: 20px;
+    }
+
+    .logo-huellitas {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .navbar-huellitas .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 18px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-label {
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+        margin-bottom: 22px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-decoration {
+        height: 280px;
+        margin-top: 35px;
+    }
+
+    .hero-circle {
+        width: 245px;
+        height: 245px;
+    }
+
+    .hero-paw {
+        width: 140px;
+        height: 140px;
+        font-size: 4.2rem;
+    }
+
+    .hero-small-circle {
+        width: 52px;
+        height: 52px;
+        font-size: 1.1rem;
+    }
+
+    .circle-one {
+        top: 5px;
+        right: 10px;
+    }
+
+    .circle-two {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .section {
+        padding: 65px 18px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.98rem;
+    }
+
+    .info-card {
+        padding: 30px 23px;
+    }
+
+    .step {
+        gap: 15px;
+        padding: 22px 0;
+    }
+
+    .step-number {
+        min-width: 52px;
+        height: 52px;
+        font-size: 1rem;
+    }
+
+    .step h3 {
+        font-size: 1.15rem;
+    }
+
+    .step p {
+        font-size: 0.95rem;
+    }
+
+    .cta {
+        padding: 70px 18px;
+    }
+
+    .cta h2 {
+        font-size: 2.15rem;
+    }
+
+    .cta p {
+        font-size: 0.98rem;
+    }
+
+    .help-button {
+        width: 50px;
+        height: 50px;
+        right: 16px;
+        bottom: 16px;
+    }
+
+    /* RAZAS */
+
+    .encabezado-razas {
+        padding: 45px 18px 25px;
+    }
+
+    .encabezado-razas h1 {
+        font-size: 2rem;
+    }
+
+    .encabezado-razas p {
+        font-size: 15px;
+    }
+
+    .buscador-contenedor {
+        margin-bottom: 30px;
+    }
+
+    #buscadorRazas {
+        padding: 13px 16px;
+    }
+
+    #contenedorRazas {
+        padding-bottom: 40px;
+    }
+
+    #contenedorRazas > .col-md-4 {
+        width: 100%;
+    }
+
+    #contenedorRazas .card-img-top {
+        height: 210px !important;
+    }
+
+    #contenedorRazas .card-body {
+        padding: 20px;
+    }
+
+    /* MODALES */
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+    }
+
+    .modal-header {
+        padding: 15px 18px;
+    }
+
+    .modal-body {
+        padding: 18px;
+    }
+
+    #imagenRazaModal {
+        max-height: 240px;
+    }
+
+    .dato-raza {
+        padding: 11px 13px;
+    }
+
+    .modal-footer {
+        padding: 12px 15px;
+        gap: 8px;
+    }
+
+    .modal-footer .btn {
+        flex: 1;
+    }
+
+    footer {
+        padding: 22px 15px;
+    }
+}
+
+/* =========================
+   PANTALLAS GRANDES
+========================= */
+
+@media (min-width: 1400px) {
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero-content {
+        max-width: 750px;
+    }
+
+    .section {
+        padding: 110px 20px;
+    }
+}

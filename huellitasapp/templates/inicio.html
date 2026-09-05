@@ -1,0 +1,585 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huellitas | Adopción responsable</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-huellitas">
+
+        <div class="container">
+
+            <a class="logo-huellitas" href="#">
+                🐾
+            </a>
+
+            <a class="navbar-brand d-flex align-items-center"
+               href="#"
+               style="margin-left: 10px;">
+
+                <span class="nombre-huellitas">
+                    Huellitas
+                </span>
+
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarHuellitas"
+                aria-controls="navbarHuellitas"
+                aria-expanded="false"
+                aria-label="Mostrar navegación">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarHuellitas">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/razas/">
+                            Razas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="#adopcionResponsable">
+                            Adopción responsable
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <div class="hero-content">
+
+                        <div class="hero-label">
+                            HUELLITAS
+                        </div>
+
+                        <h1>
+                            Encuentra la huella que
+                            <span>
+                                puede cambiar tu vida.
+                            </span>
+                        </h1>
+
+                        <p>
+                            Conoce diferentes razas de perros,
+                            descubre sus características y encuentra
+                            información que te ayude a tomar una
+                            decisión responsable antes de adoptar.
+                        </p>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+
+                            <a
+                                href="/razas/"
+                                class="btn btn-huellitas">
+
+                                Explorar razas
+
+                            </a>
+
+                            <a
+                                href="#adopcionResponsable"
+                                class="btn btn-huellitas-outline">
+
+                                Adopción responsable
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="hero-decoration">
+
+                        <div class="hero-circle">
+
+                            <div class="hero-paw">
+                                🐾
+                            </div>
+
+                            <div class="hero-small-circle circle-one">
+                                ♥
+                            </div>
+
+                            <div class="hero-small-circle circle-two">
+                                •
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMACIÓN -->
+
+    <section class="section section-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="section-title">
+                    Antes de adoptar, conoce.
+                </h2>
+
+                <p class="section-subtitle">
+                    Adoptar es una decisión importante.
+                    Conocer las características y necesidades
+                    de cada perro permite construir una relación
+                    responsable y duradera.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            🐾
+                        </div>
+
+                        <h3>
+                            Cada raza es única
+                        </h3>
+
+                        <p>
+                            Cada raza tiene características,
+                            necesidades, niveles de energía
+                            y temperamentos diferentes.
+                            Conocerlos ayuda a encontrar un
+                            compañero compatible con tu estilo
+                            de vida.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            ♥
+                        </div>
+
+                        <h3>
+                            Adoptar es un compromiso
+                        </h3>
+
+                        <p>
+                            Un perro necesita alimentación,
+                            atención veterinaria, ejercicio,
+                            espacio, tiempo y cariño durante
+                            toda su vida.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PASOS -->
+
+    <section class="section section-beige">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-5 mb-5 mb-lg-0">
+
+                    <h2 class="section-title">
+                        Una decisión informada.
+                    </h2>
+
+                    <p class="section-subtitle text-start">
+                        Antes de adoptar, considera si las
+                        características y necesidades de un
+                        perro se adaptan realmente a tu estilo
+                        de vida.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Conoce las razas
+                            </h3>
+
+                            <p>
+                                Explora diferentes razas y
+                                conoce sus características
+                                principales.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Conoce sus necesidades
+                            </h3>
+
+                            <p>
+                                Infórmate sobre alimentación,
+                                ejercicio, espacio, cuidados
+                                y atención veterinaria.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Toma una decisión informada
+                            </h3>
+
+                            <p>
+                                Elige pensando en el bienestar
+                                del animal y en lo que realmente
+                                puedes ofrecerle.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ADOPCIÓN RESPONSABLE -->
+
+    <section
+        class="section section-light"
+        id="adopcionResponsable">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="section-title">
+                    Adopción responsable
+                </h2>
+
+                <p class="section-subtitle">
+                    Adoptar significa asumir la responsabilidad
+                    de cuidar y proteger a un compañero durante
+                    toda su vida.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Alimentación
+                        </h4>
+
+                        <p>
+                            Proporcionar alimentos adecuados,
+                            agua limpia y una alimentación
+                            equilibrada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Atención veterinaria
+                        </h4>
+
+                        <p>
+                            Mantener vacunas, revisiones y
+                            tratamientos necesarios para
+                            conservar su salud.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Ejercicio
+                        </h4>
+
+                        <p>
+                            Proporcionar actividad física
+                            adecuada de acuerdo con sus
+                            características.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Tiempo
+                        </h4>
+
+                        <p>
+                            Dedicar tiempo para convivir,
+                            educar y cuidar al compañero.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Gastos
+                        </h4>
+
+                        <p>
+                            Considerar los gastos de alimento,
+                            salud, higiene y otros cuidados.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Espacio
+                        </h4>
+
+                        <p>
+                            Contar con un espacio seguro,
+                            limpio y adecuado para sus
+                            necesidades.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12">
+
+                    <div class="responsabilidad-card">
+
+                        <h4>
+                            Compromiso a largo plazo
+                        </h4>
+
+                        <p>
+                            Un perro forma parte de la familia
+                            y necesita cuidados, atención y
+                            cariño durante toda su vida.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta text-center">
+
+        <div class="container">
+
+            <h2>
+                La decisión más importante
+                merece información real.
+            </h2>
+
+            <p>
+                Conoce las características de cada raza
+                antes de tomar una decisión y descubre
+                qué tipo de compañero puede adaptarse
+                mejor a tu estilo de vida.
+            </p>
+
+            <a
+                href="#adopcionResponsable"
+                class="btn btn-huellitas">
+
+                Conocer más
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Huellitas © 2026
+        </p>
+
+        <p>
+            Información para fomentar una adopción responsable.
+        </p>
+
+    </footer>
+
+
+    <!-- BOTÓN DE AYUDA -->
+
+    <button
+        class="help-button"
+        type="button"
+        aria-label="Ayuda">
+
+        ?
+
+    </button>
+
+
+    <!-- BOOTSTRAP -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
